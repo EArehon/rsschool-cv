@@ -9,48 +9,82 @@
 
 	<main>
    
-    <img src="photo.jpg" alt="photo" width="300" height="200"><br>
-		<p>Verenich Aleksei</p>
-		<p>earehon@gmail.com or telegram: earehon</p>
-		<p>"What I want" - It is a good question.</p>
-		<p>Basic knowledge JS, CSS, HTML, PHP, SQL</p>
-        <h2>5Code examples (LATEST)</h2>
-		<div class="codeExample">
-			function multiply(first, second) {
-				let a = first.split('').reverse();
-				let b = second.split('').reverse();
+    <img src="photo.jpg" alt="photo" class="titlePhoto"><br>
 		
-				let comp = [];
-		
-				for (let i = 0; i < a.length+b.length; i++)
-				{
-					comp[i] = 0;
-				}
-		
-				for (let i = 0; i < a.length; i++){
-					for (let j = 0; j < b.length; j++){
-						comp[i+j] += (a[i] * b[j]) % 10;
-						comp[i+j+1] += Math.floor((a[i] * b[j]) / 10);
-				
-						if(comp[i+j] >= 10){
-						let temp = comp[i+j];
-						comp[i+j] %= 10;
-						comp[i+j+1] += Math.floor(temp / 10);
-					}
-				}
-			}
-		
-			if(comp[comp.length-1] == 0)
-				comp.pop();
-
-			return comp.reverse().join('');
-			}  
+	<div class="resumeTable">
+		<div class="tableRow">
+			<div class="tableCell">Name:</div>
+			<div class="tableCell">Verenich Aleksei</div>
 		</div>
-		
-		
-        <p>6. Since 2014 development of simple sites on php, css and html. Work with wordpress, latex. Administration and support of a database on 1C</p>
-		<p>7. Graduated from BrSU 2014 with a degree in Applied Mathematics.</p>
-		<p>8. Use English only on online games and watch Top Gear on English with sub.</p>
+		<div class="tableRow">
+				<div class="tableCell">Contact info:</div>
+				<div class="tableCell"><a href="mailto:earehon@gmail.com">earehon@gmail.com</a> or telegram: <a href="https://t.me/earehon">earehon</a></div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">Summary:</div>
+				<div class="tableCell">"What I want" - It is a good question.</div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">Skills:</div>
+				<div class="tableCell">
+					<p>Basic knowledge:</p>
+					<ul>
+						<li>JS</li>
+						<li>CSS</li>
+						<li>HTML</li>
+						<li>PHP</li>
+						<li>SQL</li>
+					</ul>
+				</div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">Code examples:</div>
+				<div class="tableCell">
+					<div class="codeExample">function multiply(first, second) {
+	let a = first.split('').reverse();
+	let b = second.split('').reverse();
+					
+	let comp = [];
+
+	for (let i = 0; i < a.length+b.length; i++)
+	{
+		comp[i] = 0;
+	}
+					
+	for (let i = 0; i < a.length; i++){
+		for (let j = 0; j < b.length; j++){
+			comp[i+j] += (a[i] * b[j]) % 10;
+			comp[i+j+1] += Math.floor((a[i] * b[j]) / 10);
+
+			if(comp[i+j] >= 10){
+				let temp = comp[i+j];
+				comp[i+j] %= 10;
+				comp[i+j+1] += Math.floor(temp / 10);
+			}
+		}
+	}
+					
+	if(comp[comp.length-1] == 0)
+		comp.pop();
+
+	return comp.reverse().join('');
+}  
+					</div>
+				</div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">Experience:</div>
+				<div class="tableCell">Since 2014 development of simple sites on php, css and html. Work with wordpress, latex. Administration and support of a database on 1C</div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">Education:</div>
+				<div class="tableCell">Graduated from BrSU 2014 with a degree in Applied Mathematics.</div>
+		</div>
+		<div class="tableRow">
+				<div class="tableCell">English:</div>
+				<div class="tableCell">Use English only on online games and watch Top Gear on English with sub.</div>
+		</div>
+	</div>
     </main>
 </body>
 </html>
