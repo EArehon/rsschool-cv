@@ -1,1 +1,1 @@
-# rsschool-cv
+https://earehon/rsschool-cv/cv
