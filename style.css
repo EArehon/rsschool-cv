@@ -46,6 +46,29 @@ main {
     background: white;
 }
 
+section{
+    padding: 30px;
+}
+
+section h2{
+    border-bottom: 1px solid black;
+    font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .codeExample{
     white-space: pre-wrap;
 }
@@ -71,6 +94,7 @@ section#about{
     display: flex;
 }
 
+
 div.photo {
     padding-right: 30px;
 }
@@ -81,6 +105,8 @@ div.photo {
 
 
 footer{
+    border-top : 1px solid #e9e9e9;
+    background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
