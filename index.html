@@ -7,84 +7,133 @@
 </head>
 <body>
 
+	<header id="home">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
 	<main>
-   
-    <img src="photo.jpg" alt="photo" class="titlePhoto"><br>
+
+	<section class="about" id="about">
+		<div class="photo">
+			<img src="src/images/photo.JPG" alt="Photo EArehon" class="titlePhoto">
+		</div>
+
+		<div class="about">
+			<h1>Verenich Aleksei</h1>
+			Summary: "What I want" - It is a good question.
+		</div>		
+	</section>
+
+
+
+	<section id="skills">
+		<h2>Skills</h2>
+		<ul>
+			<li>JS</li>
+			<li>CSS</li>
+			<li>HTML</li>
+			<li>SQL</li>
+			<li>PHP</li>
+			<li>3D</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Experience</h2>
+		<p>Since 2014 development of simple sites on php, css and html. Work with wordpress, latex. Administration and support of a database on 1C. </p>
+	</section>
+
+	<section>
+		<h2>Education</h2>
+		<ul>
+			<li>Graduated from BrSU 2014 with a degree in Applied Mathematics</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Languages</h2>
+		<ul>
+			<li>English - Intermediate</li>
+			<li>Russian - Native speaker</li>
+			<li>Polish - with dictionary</li>
+		</ul>
+	</section>
+
+	
+	<section id="portfolio">
+		<h2>Code examples:</h2>
+		<div class="codeExample">
+			function multiply(first, second) {
+				let a = first.split('').reverse();
+				let b = second.split('').reverse();
+							
+				let comp = [];
 		
-	<div class="resumeTable">
-		<div class="tableRow">
-			<div class="tableCell">Name:</div>
-			<div class="tableCell">Verenich Aleksei</div>
+				for (let i = 0; i &lt; a.length+b.length; i++){
+					comp[i] = 0;
+				}
+							
+				for (let i = 0; i &lt; a.length; i++){
+					for (let j = 0; j &lt; b.length; j++){
+						comp[i+j] += (a[i] * b[j]) % 10;
+						comp[i+j+1] += Math.floor((a[i] * b[j]) / 10);
+		
+						if(comp[i+j] >= 10){
+							let temp = comp[i+j];
+							comp[i+j] %= 10;
+							comp[i+j+1] += Math.floor(temp / 10);
+						}
+					}
+				}
+							
+				if(comp[comp.length-1] == 0)
+					comp.pop();
+		
+				return comp.reverse().join('');
+			}  
 		</div>
-		<div class="tableRow">
-				<div class="tableCell">Contact info:</div>
-				<div class="tableCell"><a href="mailto:earehon@gmail.com">earehon@gmail.com</a> or telegram: <a href="https://t.me/earehon">earehon</a></div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">Summary:</div>
-				<div class="tableCell">"What I want" - It is a good question.</div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">Skills:</div>
-				<div class="tableCell">
-					<p>Basic knowledge:</p>
-					<ul>
-						<li>JS</li>
-						<li>CSS</li>
-						<li>HTML</li>
-						<li>PHP</li>
-						<li>SQL</li>
-					</ul>
-				</div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">Code examples:</div>
-				<div class="tableCell">
-					<div class="codeExample">function multiply(first, second) {
-	let a = first.split('').reverse();
-	let b = second.split('').reverse();
-					
-	let comp = [];
+	</section>
 
-	for (let i = 0; i < a.length+b.length; i++)
-	{
-		comp[i] = 0;
-	}
-					
-	for (let i = 0; i < a.length; i++){
-		for (let j = 0; j < b.length; j++){
-			comp[i+j] += (a[i] * b[j]) % 10;
-			comp[i+j+1] += Math.floor((a[i] * b[j]) / 10);
+	<section>
+		<h2>Works:</h2>
+		
+		<div class="myWorks">
+			<div class="item">
+				<a href="https://earehon.github.io/rsschool-cv/cv"><img src="src/images/Markdown.JPG" alt="Markdown photo"></a>
+			</div>
+			<div class="item">
+				<a href="https://earehon.github.io/rsschool-cv/cv"><img src="src/images/Markdown.JPG" alt="Markdown photo"></a>
+			</div>
+		</div>
+		
+	</section>
+		
+	
 
-			if(comp[i+j] >= 10){
-				let temp = comp[i+j];
-				comp[i+j] %= 10;
-				comp[i+j+1] += Math.floor(temp / 10);
-			}
-		}
-	}
-					
-	if(comp[comp.length-1] == 0)
-		comp.pop();
+    
 
-	return comp.reverse().join('');
-}  
-					</div>
-				</div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">Experience:</div>
-				<div class="tableCell">Since 2014 development of simple sites on php, css and html. Work with wordpress, latex. Administration and support of a database on 1C</div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">Education:</div>
-				<div class="tableCell">Graduated from BrSU 2014 with a degree in Applied Mathematics.</div>
-		</div>
-		<div class="tableRow">
-				<div class="tableCell">English:</div>
-				<div class="tableCell">Use English only on online games and watch Top Gear on English with sub.</div>
-		</div>
-	</div>
-    </main>
+	<section id="contact">
+		<h2>Contact</h2>
+		<ul>
+			<li><a href="mailto:earehon@gmail.com">earehon@gmail.com</a></li>
+			<li><a href="https://t.me/earehon">earehon</a></li>
+		</ul>
+	</section>
+
+	</main>
+
+	<footer>
+		<a href="https://github.com/EArehon"><img src="src/images/github.svg" alt="Logo GitHub"></a>
+		2022 
+		<a href="https://rs.school/js/"><img src="src/images/rs_school_js.svg" alt="RSS Logo" class="rsLogo"></a>
+	</footer>
 </body>
 </html>
