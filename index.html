@@ -6,7 +6,6 @@
     <title>About me</title>
 </head>
 <body>
-
 	<header id="home">
 		<nav>
 			<ul>
@@ -18,22 +17,16 @@
 			</ul>
 		</nav>
 	</header>
-
 	<main>
-
 	<section class="about" id="about">
 		<div class="photo">
 			<img src="src/images/photo.JPG" alt="Photo EArehon" class="titlePhoto">
 		</div>
-
 		<div class="about">
 			<h1>Verenich Aleksei</h1>
 			Summary: "What I want" - It is a good question. I am currently taking an RSS course. In parallel with this, I study 3D modeling in my free time.
 		</div>
 	</section>
-
-
-
 	<section id="skills">
 		<h2>Skills</h2>
 		<ul>
@@ -45,19 +38,16 @@
 			<li>3D</li>
 		</ul>
 	</section>
-
 	<section>
 		<h2>Experience</h2>
 		<p>Since 2014 development of simple sites on php, css and html. Work with wordpress, latex. Administration and support of a database on 1C. </p>
 	</section>
-
 	<section>
 		<h2>Education</h2>
 		<ul>
 			<li>Graduated from BrSU 2014 with a degree in Applied Mathematics</li>
 		</ul>
 	</section>
-
 	<section>
 		<h2>Languages</h2>
 		<ul>
@@ -66,21 +56,16 @@
 			<li>Polish - with dictionary</li>
 		</ul>
 	</section>
-
-	
 	<section id="portfolio">
 		<h2>Code examples:</h2>
 		<div class="codeExample">
 			function multiply(first, second) {
 				let a = first.split('').reverse();
 				let b = second.split('').reverse();
-							
 				let comp = [];
-		
 				for (let i = 0; i &lt; a.length+b.length; i++){
 					comp[i] = 0;
 				}
-							
 				for (let i = 0; i &lt; a.length; i++){
 					for (let j = 0; j &lt; b.length; j++){
 						comp[i+j] += (a[i] * b[j]) % 10;
@@ -93,18 +78,14 @@
 						}
 					}
 				}
-							
 				if(comp[comp.length-1] == 0)
 					comp.pop();
-		
 				return comp.reverse().join('');
 			}  
 		</div>
 	</section>
-
 	<section>
 		<h2>Works:</h2>
-		
 		<div class="myWorks">
 			<div class="item">
 				<a href="https://earehon.github.io/rsschool-cv/cv"><img src="src/images/Markdown.JPG" alt="Markdown photo"></a>
@@ -113,13 +94,7 @@
 				<a href="https://earehon.github.io/rsschool-cv/"><img src="src/images/cvScreenshot.JPG" alt="CV photo"></a>
 			</div>
 		</div>
-		
 	</section>
-		
-	
-
-    
-
 	<section id="contact">
 		<h2>Contact</h2>
 		<ul>
@@ -127,9 +102,7 @@
 			<li><a href="https://t.me/earehon">earehon</a></li>
 		</ul>
 	</section>
-
 	</main>
-
 	<footer>
 		<a href="https://github.com/EArehon"><img src="src/images/github.svg" alt="Logo GitHub"></a>
 		2022
