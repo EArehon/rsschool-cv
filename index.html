@@ -29,7 +29,7 @@
 		<div class="about">
 			<h1>Verenich Aleksei</h1>
 			Summary: "What I want" - It is a good question. I am currently taking an RSS course. In parallel with this, I study 3D modeling in my free time.
-		</div>		
+		</div>
 	</section>
 
 
@@ -86,7 +86,7 @@
 						comp[i+j] += (a[i] * b[j]) % 10;
 						comp[i+j+1] += Math.floor((a[i] * b[j]) / 10);
 		
-						if(comp[i+j] >= 10){
+						if(comp[i+j] &lt;= 10){
 							let temp = comp[i+j];
 							comp[i+j] %= 10;
 							comp[i+j+1] += Math.floor(temp / 10);
@@ -132,7 +132,7 @@
 
 	<footer>
 		<a href="https://github.com/EArehon"><img src="src/images/github.svg" alt="Logo GitHub"></a>
-		2022 
+		2022
 		<a href="https://rs.school/js/"><img src="src/images/rs_school_js.svg" alt="RSS Logo" class="rsLogo"></a>
 	</footer>
 </body>
